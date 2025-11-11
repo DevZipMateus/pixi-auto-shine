@@ -20,6 +20,7 @@ import midia7 from "@/assets/gallery/midia-7.jpg";
 import midia8 from "@/assets/gallery/midia-8.jpg";
 import midia9 from "@/assets/gallery/midia-9.jpg";
 import midia10 from "@/assets/gallery/midia-10.jpg";
+import midia11 from "@/assets/gallery/midia-11.jpg";
 
 const images = [
   { src: midia1, alt: "Detalhe de farol revitalizado" },
@@ -32,6 +33,7 @@ const images = [
   { src: midia8, alt: "Carro novo após lavagem" },
   { src: midia9, alt: "SUV branco limpo" },
   { src: midia10, alt: "Motor detalhado" },
+  { src: midia11, alt: "Caminhonete antes e depois da lavagem" },
 ];
 
 export default function Gallery() {
