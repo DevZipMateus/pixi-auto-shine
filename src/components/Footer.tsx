@@ -17,24 +17,24 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo e descrição */}
-          <div className="space-y-4">
-            <img src={logo} alt="Pires Lavagem" className="h-24 w-auto" />
-            <p className="text-sm text-primary-foreground/80">
+          <div className="space-y-3 sm:space-y-4">
+            <img src={logo} alt="Pires Lavagem" className="h-20 sm:h-24 w-auto" />
+            <p className="text-xs sm:text-sm text-primary-foreground/80">
               Qualidade, respeito e dedicação em cada detalhe do seu veículo desde 2024.
             </p>
           </div>
 
           {/* Links rápidos */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary-foreground">Navegação</h3>
-            <ul className="space-y-2">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-primary-foreground">Navegação</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               <li>
                 <button 
                   onClick={() => scrollToSection("hero")}
-                  className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors"
+                  className="text-xs sm:text-sm text-primary-foreground/80 hover:text-secondary transition-colors text-left"
                 >
                   Início
                 </button>
@@ -68,11 +68,11 @@ const Footer = () => {
 
           {/* Contato */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary-foreground">Contato</h3>
-            <ul className="space-y-3">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-primary-foreground">Contato</h3>
+            <ul className="space-y-2 sm:space-y-3">
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-primary-foreground mt-1 flex-shrink-0" />
-                <span className="text-sm text-primary-foreground/80">
+                <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary-foreground mt-0.5 sm:mt-1 flex-shrink-0" />
+                <span className="text-xs sm:text-sm text-primary-foreground/80">
                   Rua General Neto - 60<br />
                   (anexo ao estacionamento Pare Aqui)
                 </span>
@@ -102,11 +102,11 @@ const Footer = () => {
 
           {/* Horários */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-primary-foreground">Horário</h3>
-            <div className="space-y-3">
+            <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 text-primary-foreground">Horário</h3>
+            <div className="space-y-2 sm:space-y-3">
               <div className="flex items-start gap-2">
-                <Clock className="w-4 h-4 text-primary-foreground mt-1 flex-shrink-0" />
-                <div className="text-sm text-primary-foreground/80">
+                <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary-foreground mt-0.5 sm:mt-1 flex-shrink-0" />
+                <div className="text-xs sm:text-sm text-primary-foreground/80">
                   <p className="font-medium">Segunda a Sexta</p>
                   <p>8h às 12h e 13h30 às 18h</p>
                 </div>
@@ -122,9 +122,9 @@ const Footer = () => {
                 href="https://www.instagram.com/pires_lavagemautomotiva"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-secondary transition-colors mt-4"
+                className="flex items-center gap-2 text-xs sm:text-sm text-primary-foreground/80 hover:text-secondary transition-colors mt-3 sm:mt-4"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span>@pires_lavagemautomotiva</span>
               </a>
             </div>
@@ -132,8 +132,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-primary-foreground/10 pt-6 text-center">
-          <p className="text-sm text-primary-foreground/60">
+        <div className="border-t border-primary-foreground/10 pt-4 sm:pt-6 text-center">
+          <p className="text-xs sm:text-sm text-primary-foreground/60 px-4">
             © {new Date().getFullYear()} Pires Lavagem e Estética Automotiva. Todos os direitos reservados.
           </p>
         </div>
