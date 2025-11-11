@@ -1,5 +1,7 @@
 import { Droplets, Bike, Wrench, Sparkles, Shield, Sofa, Lightbulb, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import servicesImage from "@/assets/services-image.jpg";
+import detailWork from "@/assets/detail-work.jpg";
 
 const Services = () => {
   const services = [
@@ -70,6 +72,23 @@ const Services = () => {
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8 sm:mb-10 md:mb-12">
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={servicesImage} 
+                alt="Interior de veículo limpo e detalhado" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={detailWork} 
+                alt="Revitalização de faróis - antes e depois" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <div className="text-center bg-muted/30 rounded-xl sm:rounded-2xl p-6 sm:p-8">

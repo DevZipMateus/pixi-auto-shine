@@ -1,4 +1,5 @@
 import { Target, Eye, Heart } from "lucide-react";
+import aboutImage from "@/assets/about-image.jpg";
 
 const About = () => {
   const values = [
@@ -56,6 +57,13 @@ const About = () => {
           </div>
 
           <div className="mt-12 text-center">
+            <div className="mb-8 rounded-2xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+              <img 
+                src={aboutImage} 
+                alt="Lavagem profissional de veículos" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-lg text-muted-foreground italic max-w-3xl mx-auto">
               "Mais do que limpar carros, a Pires Lavagem valoriza cada detalhe, cuidando de cada veículo como se fosse único. 
               Com atendimento atencioso, produtos de qualidade e paixão pelo que faz, a empresa se tornou sinônimo de confiança, 
