@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Logo e descrição */}
           <div className="space-y-3 sm:space-y-4">
-            <img src={logo} alt="Pires Lavagem" className="h-32 sm:h-36 md:h-40 w-auto" />
+            <img src={logo} alt="Pires Lavagem" className="h-40 sm:h-48 md:h-56 lg:h-64 w-auto" />
             <p className="text-xs sm:text-sm text-primary-foreground/80">
               Qualidade, respeito e dedicação em cada detalhe do seu veículo desde 2024.
             </p>
