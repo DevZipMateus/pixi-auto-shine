@@ -73,8 +73,9 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary-foreground mt-0.5 sm:mt-1 flex-shrink-0" />
                 <span className="text-xs sm:text-sm text-primary-foreground/80">
-                  Rua General Neto - 60<br />
-                  (anexo ao estacionamento Pare Aqui)
+                  Rua General Neto, 60<br />
+                  Centro, Santa Maria - RS<br />
+                  CEP: 97050-240
                 </span>
               </li>
               <li className="flex items-center gap-2">

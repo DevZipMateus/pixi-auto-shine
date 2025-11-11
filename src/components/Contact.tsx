@@ -18,8 +18,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua General Neto - 60 (em anexo ao estacionamento pare aqui)",
-      link: "https://maps.google.com/?q=Rua+General+Neto+60",
+      content: "Rua General Neto, 60 - Centro, Santa Maria - RS, 97050-240",
+      link: "https://maps.google.com/?q=Rua+General+Neto+60+Centro+Santa+Maria+RS",
     },
     {
       icon: Instagram,
@@ -94,7 +94,7 @@ const Contact = () => {
 
           <div className="bg-card rounded-xl overflow-hidden shadow-sm">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.8!2d-53.56!3d-30.16!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA5JzM2LjAiUyA1M8KwMzMnMzYuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.5!2d-53.8128!3d-29.6847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua+General+Neto%2C+60+-+Centro%2C+Santa+Maria+-+RS%2C+97050-240!5e0!3m2!1spt-BR!2sbr!4v1"
               width="100%"
               height="300"
               className="sm:h-[350px] md:h-[400px]"
@@ -102,7 +102,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Pires Lavagem"
+              title="Localização Pires Lavagem - Rua General Neto, 60 - Centro, Santa Maria - RS"
             ></iframe>
           </div>
         </div>
