@@ -59,13 +59,13 @@ const Hero = () => {
           </div>
 
           {/* Vídeo à direita */}
-          <div className="relative rounded-lg overflow-hidden shadow-2xl">
+          <div className="relative rounded-lg overflow-hidden shadow-2xl max-w-md mx-auto lg:mx-0">
             <video 
               autoPlay 
               loop 
               muted 
               playsInline
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-auto object-cover rounded-lg"
             >
               <source src="/video/midia_12.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos.
