@@ -38,7 +38,7 @@ const Header = () => {
     label: "Contato",
     id: "contact"
   }];
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-background"}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-primary shadow-md`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
@@ -46,12 +46,12 @@ const Header = () => {
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
-            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-foreground hover:text-primary transition-colors font-medium">
+            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-primary-foreground hover:text-secondary transition-colors font-medium">
                 {item.label}
               </button>)}
           </nav>
 
-          <Button variant="default" size="lg" className="hidden md:flex" asChild>
+          <Button variant="secondary" size="lg" className="hidden md:flex" asChild>
             <a href="https://wa.me/5555997301745" target="_blank" rel="noopener noreferrer">
               Agendar serviço
             </a>
@@ -64,10 +64,10 @@ const Header = () => {
 
         {isMobileMenuOpen && <div className="md:hidden py-4 border-t">
             <nav className="flex flex-col gap-4">
-              {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-foreground hover:text-primary transition-colors font-medium text-left">
+              {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-primary-foreground hover:text-secondary transition-colors font-medium text-left">
                   {item.label}
                 </button>)}
-              <Button variant="default" size="lg" className="w-full" asChild>
+              <Button variant="secondary" size="lg" className="w-full" asChild>
                 <a href="https://wa.me/5555997301745" target="_blank" rel="noopener noreferrer">
                   Agendar serviço
                 </a>
